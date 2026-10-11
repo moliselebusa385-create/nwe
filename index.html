@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesotho Horizons | Discover the Kingdom in the Sky</title>
+    <meta name="description" content="Explore the beauty of Lesotho with scenic escapes, cultural stays and thrilling adventures." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="brand-mark">L</span>
+          Lesotho Horizons
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="register.html">Join Free</a></li>
+            <li class="nav-item"><button id="themeToggle" class="btn btn-outline-primary btn-sm">Toggle Theme</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge-soft text-white border border-light-subtle">Basotho adventure awakes</span>
+            <h1 class="mt-3">Experience the mountain soul of Lesotho.</h1>
+            <p class="mt-3 text-white-50">From dramatic waterfalls and plateaus to vibrant heritage and luxury escapes, Lesotho is a story of awe, authenticity and unforgettable adventure.</p>
+            <div class="d-flex gap-3 flex-wrap mt-4">
+              <a href="services.html" class="btn btn-primary btn-lg">Explore tours</a>
+              <a href="gallery.html" class="btn btn-outline-light btn-lg">View gallery</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="stat-card p-4 h-100">
+                  <div class="display-6 fw-bold">14</div>
+                  <div class="small text-white-50">Top destinations</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-card p-4 h-100">
+                  <div class="display-6 fw-bold">120+</div>
+                  <div class="small text-white-50">Travel experiences</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-card p-4 h-100">
+                  <div class="display-6 fw-bold">4.9</div>
+                  <div class="small text-white-50">Average guest rating</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-card p-4 h-100">
+                  <div class="display-6 fw-bold">24/7</div>
+                  <div class="small text-white-50">Support & planning</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="section-title">Why travellers choose Lesotho</h2>
+            <p class="section-subtitle mx-auto">Discover authentic experiences designed for culture lovers, adrenaline seekers and slow travellers.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="feature-box">
+                <i class="bi bi-compass"></i>
+                <h4>Curated adventures</h4>
+                <p>Choose from guided hikes, scenic drives and cultural immersions tailored for every type of traveller.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="feature-box">
+                <i class="bi bi-house-heart"></i>
+                <h4>Comfortable stays</h4>
+                <p>Enjoy boutique hotels, mountain lodges and guesthouses that combine warmth, comfort and local character.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="feature-box">
+                <i class="bi bi-people"></i>
+                <h4>Local expertise</h4>
+                <p>Our trusted local guides share the stories, traditions and hidden places that make Lesotho unique.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+            <div>
+              <h2 class="section-title mb-0">Top destinations</h2>
+            </div>
+            <a href="services.html" class="btn btn-outline-primary">See all packages</a>
+          </div>
+          <div id="destinationCards" class="row"></div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <h2 class="section-title">Go beyond the usual route</h2>
+              <p class="section-subtitle">Whether you dream of a peaceful mountain weekend or a packed itinerary filled with activities, we design trips that honour Lesotho’s beauty and your pace.</p>
+              <ul class="list-check">
+                <li>Custom travel planning for couples, families and groups</li>
+                <li>Flexible holiday packages with accommodation and transport</li>
+                <li>Easy booking support for attractions, hikes and cultural experiences</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <div class="card-custom p-4">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80" alt="Lesotho landscape" class="rounded-4 mb-3" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h4 class="mb-0">Highland escape</h4>
+                    <small class="text-muted">4-day guided itinerary</small>
+                  </div>
+                  <span class="badge-soft">From M3,200</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4 class="text-white mb-3">Lesotho Horizons</h4>
+            <p>Helping travellers discover Lesotho through unforgettable experiences, local stories and breathtaking landscapes.</p>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="text-white mb-3">Quick links</h5>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Tours & services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="text-white mb-3">Contact</h5>
+            <ul class="list-unstyled">
+            <li>+266 52 123 456</li>
+              <li>lesothohorizons@gmail.co.ls</li>
+              <li>Maseru Lesotho</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-top border-secondary mt-4 pt-3 text-center text-white-50">
+          &copy; <span id="currentYear"></span> Lesotho Horizons. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
